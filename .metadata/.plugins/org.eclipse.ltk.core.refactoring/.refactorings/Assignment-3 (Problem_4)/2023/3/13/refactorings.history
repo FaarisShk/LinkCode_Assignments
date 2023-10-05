@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;USERTRAIKL&apos; to &apos;USERTRAIL&apos;&#x0D;&#x0A;- Original project: &apos;Assignment-3 (Problem_4)&apos;&#x0D;&#x0A;- Original element: &apos;USERTRAIKL&apos;&#x0D;&#x0A;- Renamed element: &apos;USERTRAIL&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;USERTRAIKL&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{USERTRAIKL.java[USERTRAIKL" matchStrategy="1" name="USERTRAIL" qualified="false" references="true" similarDeclarations="false" stamp="1679833065003" textual="false" version="1.0"/>
+</session>

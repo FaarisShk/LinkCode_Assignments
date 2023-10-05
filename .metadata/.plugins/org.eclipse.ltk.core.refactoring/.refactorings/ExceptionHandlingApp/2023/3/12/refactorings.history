@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;My_Exception&apos; to &apos;InvalidBalException&apos;&#x0D;&#x0A;- Original project: &apos;ExceptionHandlingApp&apos;&#x0D;&#x0A;- Original element: &apos;My_Exception&apos;&#x0D;&#x0A;- Renamed element: &apos;InvalidBalException&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;My_Exception&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{My_Exception.java[My_Exception" matchStrategy="1" name="InvalidBalException" qualified="false" references="true" similarDeclarations="false" stamp="1679397551705" textual="false" version="1.0"/>
+</session>

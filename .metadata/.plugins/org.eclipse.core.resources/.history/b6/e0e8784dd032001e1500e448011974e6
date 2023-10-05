@@ -1,0 +1,90 @@
+import java.util.*;
+public class main{
+	static Scanner sc = new Scanner(System.in);
+	
+	public static void findMax(ArrayList<Integer> a1) {
+		
+		int max = Integer.MIN_VALUE;
+		
+		for(int i=0;i<a1.size();i++) {
+			if(a1.indexOf(i)>max) {
+				i = max;
+			}
+		}
+		
+		System.out.println("The highest number in the ArrayList is: " + max);
+	}
+	public static void reverseArrayList(ArrayList<Integer> a1) {
+		System.out.println("Printing the array in reverse ");
+		for(int i=a1.size()-1;i>=0;i--) {
+			System.out.print(a1.get(i)+ " ");
+		}
+	}
+	public static void ArrayListOperations(ArrayList<Integer> a1, int choice) {
+
+
+		switch(choice) {
+		case 1:
+			System.out.print("Adding more elements");
+			System.out.println("How many more elements do you want to add: ");
+			int n = sc.nextInt();
+			for(int i=0;i<n;i++) {
+				System.out.println("Enter elements at index " + (a1.size()+1) + ": ");
+				int n1 = sc.nextInt();
+				a1.add(n1);
+			}
+			printArrayList(a1);
+			break;
+		case 2: 
+			System.out.println("Removing Elements");
+			System.out.println("Enter the index whose element you want remove");
+			int index = sc.nextInt();
+			a1.remove(index);
+			printArrayList(a1);
+			break;
+		case 3:
+			System.out.println("Updating Elements");
+			System.out.println("Enter the index whose element you want to update");
+			int n1 = sc.nextInt();
+			System.out.println("Enter the new element: ");
+			int n2 = sc.nextInt();
+			a1.remove(n1);
+			a1.add(n1, n2);
+			printArrayList(a1);
+			break;			
+			}
+		}
+
+		public static void printArrayList(ArrayList<Integer> a1) {
+			System.out.println("Displaying the ArrayList");
+			for(int i=0;i<a1.size();i++) {
+				System.out.print(a1.get(i) + " ");
+			}
+		}
+
+		public static void main(String []args) {
+
+			System.out.print("Enter the size of your array: ");
+			int n = sc.nextInt();
+
+			ArrayList<Integer> a1 = new ArrayList<>();
+
+			for(int i=0;i<n;i++) {
+				System.out.print("Enter number at index " + (i) + ": ");
+				int n1 = sc.nextInt();
+				a1.add(n1);
+			}
+//			reverseArrayList(a1);
+//			ArrayListOperations(a1,1);
+//			ArrayListOperations(a1,2);
+//			ArrayListOperations(a1,3);
+			
+			printArrayList(a1);
+			findMax(a1);
+			
+			
+			
+
+			
+		}
+	}

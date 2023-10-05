@@ -1,0 +1,6 @@
+http://localhost:9000/users/user/create                  Method = "POST"
+http://localhost:9000/users/multiUsers/create            Method="POST"
+http://localhost:9000/users/id/1                         Method="GET"
+http://localhost:9000/users/allusers                     Method="GET"
+http://localhost:9000/users/id/1/newAge/60               Method="PUT"
+http://localhost:9000/users/delete/id/3                  Method="DELETE"
